@@ -235,7 +235,7 @@ function write_html(html, file, links = "") {
 		<!DOCTYPE html>
 		<html>
 			<head>
-				<link rel="stylesheet" href="/style.css">
+				<link rel="stylesheet" href="./style.css">
 			</head> 
 		<body>
 
