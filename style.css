@@ -1,16 +1,18 @@
 :root {
 -brown: #441D01;
   --red: #E30F00;
+  --orange: #ff740a;
   --grey: #030303;
   --grey2: #000;
   --purple: #C1B3FE;
   --purple-2: #a08bff;
-  --blue: #555577;
+  --blue: #101fe8;
   --pink: #FEB8D5;
+  --pink-2: #f2279a;
   --black: #e9e9e9;
   --secondary: #8361fe;
   --background: #D1F6DB;
-  --color: var(--purple);
+  --color: var(--orange);
   --light-grey: #00000022;}
 
 @font-face {
@@ -20,15 +22,15 @@
 
 
 @font-face {
-	font-family: 'gap';
-	src: url('./GapSans.ttf') format('truetype');
+	font-family: 'director';
+	src: url('./Director-Regular.otf') format('opentype');
 }
 
 body {
 	background: var(--black);
 	color: var(--grey);
 	line-height: 1.4em;
-	font-family: "Arial Narrow", sans-serif;
+	font-family: "Helvetica", sans-serif;
 	font-weight: 600; 
 	font-size: 1.2em;
 }
@@ -45,7 +47,7 @@ h1{
 }
 
 h1,h2,h3,h4,h5,h6, a {
-	font-family: 'gap';
+	font-family: 'director';
 }
 
 a {
@@ -70,13 +72,13 @@ xmp {
 
 .block.month{
 	background: var(--color);
-  color: var(--purple-2);
+  color: var(--black);
   border: none;
 }
 .block {
 	width: 800px;
 	margin: 20px auto;
-	border: 1px solid var(--grey2);
+	border: 1px solid var(--blue);
 	padding: 1em;
 	/* box-shadow: 0 0 10px 0px var(--light-grey); */
 	/* max-width: 600px; */
@@ -113,12 +115,12 @@ input.t6:checked~.block-list {display:block}
 
 label  {
 	padding-left: 1.5em;
-	background-color: var(--purple);
+	background-color: var(--orange);
 	padding-right: .5em;
 }
 .nav {
 	position: fixed;
-	background-color: var(--purple);
+	background-color: var(--orange);
 	bottom: 1em;
 	padding: .5em;
 	left: 1em;
@@ -226,7 +228,8 @@ button {
 }
 
 .date {
-	color: var(--secondary);
+	color: var(--orange);
 	width: 15em;
 	margin-bottom: .5em;
+	font-family: 'director';
 }
