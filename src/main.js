@@ -6,6 +6,7 @@ import { cacheBlocks, getChannelContents, getChannelInfo } from "./arena.js";
 import { renderChannel, wrapPage } from "./page.js";
 import { createRssItems, renderRss } from "./rss.js";
 import { copyDir, readJson, sortByPosition, writeFile, writeJson } from "./utils.js";
+import { S } from "../markdown-it/uc-micro.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
@@ -85,6 +86,7 @@ function writeBlockPages(blockPages, links = "") {
 		writeFile(path.join(dist, "blocks", `${blockPage.id}.html`), wrapPage(blockPage.html, { links }));
 	}
 }
+
 
 function writeChannelPage(channel, links = "", isIndex = false) {
 	return renderChannel(channel).then(({ html, blockPages }) => {
