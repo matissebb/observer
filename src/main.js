@@ -87,7 +87,6 @@ function writeBlockPages(blockPages, links = "") {
 	}
 }
 
-
 function writeChannelPage(channel, links = "", isIndex = false) {
 	return renderChannel(channel).then(({ html, blockPages }) => {
 		writeBlockPages(blockPages, links);
