@@ -6,7 +6,7 @@ import { auth } from "./auth.js";
 // SECTION : Are.na Utilities
 // ********************************
 //
-let host = "https://api.are.na/v2"
+let host = "https://api.are.na/"
 // let host = "http://localhost:3000/api";
 let options = {
 	headers: {
